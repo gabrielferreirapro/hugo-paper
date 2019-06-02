@@ -3,3 +3,6 @@
 
 - id: next_page
   translation: 'Next Page'
+
+- id: read_in
+  translation: 'Leia em'

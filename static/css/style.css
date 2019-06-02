@@ -522,14 +522,16 @@ img {
   margin-right: 1px;
 }
 .footer a {
-  display: inline-flex;
-  align-items: center;
   color: inherit;
 }
 .footer a:hover {
   color: rgba(0, 0, 0, 0.9);
 }
-
+.footer .logo-hugo, .footer .love-heart {
+  display: inline;
+  height: 1rem;
+  margin-bottom: -0.25rem;
+}
 /* 404
 -------------------------------------------------- */
 .not-found {

@@ -7,6 +7,13 @@
       {{- if or .Params.author .Site.Params.author -}}
       {{ .Params.author | default .Site.Params.author }} · {{ end }}
       {{- .Date.Format (.Site.Params.dateFormat | default "2006.1.2") -}}
+      {{ if .IsTranslated }}
+          <nav class="LangNav">
+          {{ range .Translations }}
+          {{ i18n "read_in" }}<a href="{{ .Permalink }}"> {{ .Language.LanguageName }}</a>
+          {{ end}}
+          </nav>
+      {{ end }}
     </div>
   </header>
   <div class="post-content">{{ .Content }}</div>
